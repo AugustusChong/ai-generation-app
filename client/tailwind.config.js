@@ -12,6 +12,8 @@ export default {
       colors: {
         fontPrimary: "#222328",
         fontSecondary: "#666e75",
+        fontTertiary: "#6449ff",
+        buttonPrimary: "#6469ff",
       },
       fontFamily: {
         inter: ["Inter var", "sans-serif"],
