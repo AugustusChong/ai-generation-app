@@ -8,13 +8,17 @@ const router = express.Router();
 
 const configuration = new Configuration({ apiKey: process.env.OPENAI_API_KEY });
 
-const openai = new OpenAIApi(configuration);
+const openAI = new OpenAIApi(configuration);
+
+router.route("/").get(async (req, res) => {
+  res.send("DALL-E API is running");
+});
 
 router.route("/").post(async (req, res) => {
   try {
     const { prompt } = req.body;
 
-    const response = await openai.createImage({
+    const response = await openAI.createImage({
       prompt,
       n: 1,
       size: "1024x1024",
