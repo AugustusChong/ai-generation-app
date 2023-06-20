@@ -8,7 +8,7 @@ const Navbar = () => {
     <header>
       <nav className="w-full flex justify-between items-center bg-white sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]">
         <Link to="/">
-          <img src={logo} alt="logo" className="w-28 object-contain py-2" />
+          <img src={logo} alt="logo" className="w-60 object-contain py-2" />
         </Link>
         {location.pathname === "/image-showcase" && (
           <Link
