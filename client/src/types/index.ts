@@ -4,6 +4,21 @@ export type Form = {
   photo: string;
 };
 
+export interface IPostData {
+  name: string;
+  photo: string;
+  prompt: string;
+  __v: number;
+  _id: string;
+}
+
+export type CardProps = {
+  _id: string;
+  name: string;
+  prompt: string;
+  photo: string;
+};
+
 export type FormFieldProps = {
   labelName?: string;
   type?: string;
@@ -15,7 +30,7 @@ export type FormFieldProps = {
   handleSurpriseMe?: () => void;
 };
 
-export type RenderCardProps = {
-  data: any;
+export type RenderCardsProps = {
+  data: IPostData[];
   title: string;
 };
