@@ -12,7 +12,7 @@ export default {
       colors: {
         fontPrimary: "#222328",
         fontSecondary: "#666e75",
-        fontTertiary: "#00FFFF",
+        fontTertiary: "#0096FF",
         buttonPrimary: "#7393B3",
       },
       fontFamily: {
