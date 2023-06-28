@@ -10,6 +10,7 @@ export default {
           "0 0 1px 0 rgba(189,192,207,0.06),0 10px 16px -1px rgba(189,192,207,0.4)",
       },
       colors: {
+        backgroundPrimary: "#f9fafe",
         fontPrimary: "#222328",
         fontSecondary: "#666e75",
         fontTertiary: "#0096FF",
