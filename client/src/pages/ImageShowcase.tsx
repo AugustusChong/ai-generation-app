@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FormField, Loader, RenderCards } from "../components";
+import { sectionClassNames } from "../constants";
 import type { IPostData } from "../types";
 
 const ImageShowcase = () => {
@@ -59,7 +60,7 @@ const ImageShowcase = () => {
   };
 
   return (
-    <section className="max-w-7xl mx-auto">
+    <section className={`${sectionClassNames} max-w-7xl mx-auto`}>
       <div>
         <h1 className="font-extrabold text-fontPrimary text-[32px]">
           Community Showcase

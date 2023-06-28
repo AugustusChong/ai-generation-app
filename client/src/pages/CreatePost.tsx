@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { preview } from "../assets";
 import { getRandomPrompt } from "../utils";
 import { FormField, Loader } from "../components";
+import { sectionClassNames } from "../constants";
 import type { Form } from "../types";
 
 const CreatePost = () => {
@@ -78,7 +79,7 @@ const CreatePost = () => {
   };
 
   return (
-    <section className="max-w-7xl mx-auto">
+    <section className={`${sectionClassNames} max-w-7xl mx-auto`}>
       <div>
         <h1 className="font-extrabold text-fontPrimary text-[32px]">Create</h1>
         <p className="mt-2 text-fontSecondary text-[16px] max-w-[500px] text-justify tracking-tight">
