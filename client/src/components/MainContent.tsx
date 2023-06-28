@@ -3,7 +3,7 @@ import { Home, ImageShowcase, CreatePost, GPTChat } from "../pages";
 
 const MainContent = () => {
   return (
-    <main>
+    <main className="bg-backgroundPrimary">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/image-showcase" element={<ImageShowcase />} />
